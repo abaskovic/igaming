@@ -1,0 +1,88 @@
+.whatWeServe {
+    padding-inline: min(4.757vw, 68.5px);
+    display: flex;
+    align-items: center;
+    gap:  min(9.678vw, 139.37px) ;
+    padding-top:  min(3.125vw, 45px)  ;
+    padding-bottom: min(2.361vw, 34px)  ;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+    gap: min(5.944vw, 85.59px);
+}
+
+.values > div:nth-child(1) {
+    max-width: 204.18px;
+
+}
+.values > div:nth-child(2) {
+    max-width: 244.27px;
+    padding-right: 0.76px;
+
+}
+.values > div:nth-child(3) {
+    max-width: 233.27px;
+}
+
+.whatWeServe .card{
+    display: flex;
+    flex-direction: column;
+    gap: min(1.644vw, 23.67px);
+    max-width: 244.27px;
+}
+
+.whatWeServe .card img {
+    width: fit-content;
+}
+
+.whatWeServe h3 {
+    font-size: 1.65em;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.11003334075212479px;
+}
+
+
+.whatWeServe h2 {
+    font-weight: 600;
+    font-size: 1.1094em;
+    color: var(--pink);
+}
+
+.whatWeServe h1 {
+    font-weight: 700;
+    font-size: 2.465625em;
+}
+
+.whatWeServe p {
+    color: var(--paragraph-color);
+    line-height: 1.6025em;
+    font: 1em;
+}
+
+.whatWeServe .heading {
+    display: flex;
+    flex-direction: column;
+    max-width: 244.27px;
+    gap: min(1.644vw, 23.67px);
+}
+
+@media (max-width: 1024px) {
+    .values {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 768px) {
+    .whatWeServe {
+        flex-direction: column;
+        padding-inline: 16px;
+    }
+
+    .whatWeServe .heading{max-width: unset;}
+    .whatWeServe .card{align-items: center;}
+    
+}

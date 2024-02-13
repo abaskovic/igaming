@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './TopDestinations.css';
 import { destinations } from './data/Destinations';
+import SelectDestination from './components/selectDestination/SelectDestination';
+import DestinationCard from './components/tripCard/DestinationCard';
 
 function TopDestinations() {
     const [selectedCategory, setSelectedCategory] = useState('');
@@ -19,35 +21,17 @@ function TopDestinations() {
     return (
         <section className="topDestination">
 
-            <div className="selectDestination">
-                <div className='heading'>
-                    <h2>Top Destinations</h2>
-                    <h1>Explore top destination</h1>
-                </div>
+            <SelectDestination
+                uniqueCategories={uniqueCategories}
+                selectedCategory={selectedCategory}
+                handleCategorySelect={handleCategorySelect}
+            />
 
-                <ul className="categories">
-                    {uniqueCategories.map((category, index) => (
-                        <li className={selectedCategory===category?"selectedCategory":""} key={index} onClick={() => handleCategorySelect(category)} aria-label={`Select category: ${category}`}> 
-                            {category}
-                        </li>
-                    ))}
-                    <li onClick={() => handleCategorySelect("")} aria-label="Select all categories"> 
-                        see all
-                    </li>
-                </ul>
-
-        </div>
-
-            {/* <div className="destinations">
-                <h3>Destinations:</h3>
-                <div className="destination-list">
-                    {filteredDestinations.map((destination, index) => (
-                        <div key={index} className="destination-item">
-                            <h4>{destination.city}</h4>
-                        </div>
-                    ))}
-                </div>
-            </div> */}
+            <div className="destinations">
+                {filteredDestinations.map((destination, index) => (
+                    <DestinationCard key={index} destination={destination} />
+                ))}
+            </div>
         </section >
     );
 }

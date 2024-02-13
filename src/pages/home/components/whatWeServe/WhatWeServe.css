@@ -81,7 +81,7 @@
 @media (max-width: 768px) {
     .whatWeServe {
         flex-direction: column;
-        padding-inline: 1em;
+        padding-inline: 1.5em;
         align-items: start;
     }
 

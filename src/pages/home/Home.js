@@ -7,7 +7,7 @@ function Home() {
     return (
         <Container>
            <WhatWeServe />
-           {/* <TopDestinations /> */}
+           <TopDestinations />
            <Newsletter />
         </Container>
     );

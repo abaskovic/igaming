@@ -4,7 +4,10 @@
 :root {
   --paragraph-color: rgba(25, 24, 37, 0.75);
   --dark: rgba(34, 40, 49, 1);
-  --pink: rgba(248, 94, 159, 1)
+  --pink: rgba(248, 94, 159, 1);
+  --cardBlack: rgba(12, 17, 31, 1);
+  --text-color:rgba(37, 43, 66, 1);
+  --newsletter:rgba(250, 205, 73, 1);
 }
 
 
@@ -12,6 +15,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

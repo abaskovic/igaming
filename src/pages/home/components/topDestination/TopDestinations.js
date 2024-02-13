@@ -21,11 +21,20 @@ function TopDestinations() {
     return (
         <section className="topDestination">
 
-            <SelectDestination
-                uniqueCategories={uniqueCategories}
-                selectedCategory={selectedCategory}
-                handleCategorySelect={handleCategorySelect}
-            />
+            <div className="selectDestination">
+
+                <div className='heading'>
+                    <h2>Top Destinations</h2>
+                    <h1>Explore top destination</h1>
+                </div>
+
+                <SelectDestination
+                    uniqueCategories={uniqueCategories}
+                    selectedCategory={selectedCategory}
+                    handleCategorySelect={handleCategorySelect}
+                />
+            </div>
+
 
             <div className="destinations">
                 {filteredDestinations.map((destination, index) => (

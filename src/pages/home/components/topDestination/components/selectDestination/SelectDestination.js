@@ -3,11 +3,7 @@ import './SelectDestination.css';
 
 const SelectDestination = ({ uniqueCategories, selectedCategory, handleCategorySelect }) => {
     return (
-        <div className="selectDestination">
-            <div className='heading'>
-                <h2>Top Destinations</h2>
-                <h1>Explore top destination</h1>
-            </div>
+          
 
             <ul className="categories">
                 {uniqueCategories.map((category, index) => (
@@ -19,7 +15,6 @@ const SelectDestination = ({ uniqueCategories, selectedCategory, handleCategoryS
                     see all
                 </li>
             </ul>
-        </div>
     );
 }
 

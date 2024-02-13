@@ -49,6 +49,7 @@
 .whatWeServe h2 {
     font-weight: 600;
     font-size: 1.1094em;
+    text-transform: uppercase;
     color: var(--pink);
 }
 

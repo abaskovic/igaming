@@ -9,7 +9,7 @@ const DestinationCard = ({ destination }) => {
         <div className="destinationItem">
             <div className="destinationImageBlock">
                 <img src={destination.imageUrl} alt={destination.city} className='image' />
-                <img src={cardBg} className='bgImage' />
+                <img src={cardBg} className='bgImage' alt="backgroud image"/>
                 <div className="destinationRating">
                     <img src={star} alt="Star Icon" />
                     <p>{destination.rating}</p>

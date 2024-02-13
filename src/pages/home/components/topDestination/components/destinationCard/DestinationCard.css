@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.button span{
+    font-family: "Inter", sans-serif;
+    font-size: 0.875em;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.01em;
+    color: white;
+}
+
+.button{
+    padding: 8.79px 19.52px;
+    border-radius: 43.93px;
+    background: linear-gradient(135deg, #8482FF 0%, #7723FE 100%);
+}
+
+
 .destinationImageBlock {
     position: relative;
     height: min(19.176vw, 276.14px);
@@ -109,6 +127,8 @@
     align-items: center;
     gap: 5.05px
 }
+
+
 
 
 @media (max-width: 1280px) {

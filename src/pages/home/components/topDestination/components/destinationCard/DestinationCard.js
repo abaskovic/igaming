@@ -2,7 +2,6 @@
 import React from 'react';
 import star from '../../assets/star.svg';
 import cardBg from '../../assets/cardBg.png';
-import Button from '../../../../../../components/ui/button/Button';
 
 import './DestinationCard.css';
 const DestinationCard = ({ destination }) => {
@@ -31,7 +30,9 @@ const DestinationCard = ({ destination }) => {
                     </div>
                 </div>
 
-                <Button text="See More" href="/" ariaLabel={`See more about ${destination.city}`} />
+                <a href="/" className="button" aria-label={`See more about ${destination.city}`}>
+                    <span>See More</span>
+                </a>
             </div>
         </div>
     );

@@ -105,7 +105,7 @@
 }
 
 .destinationPrice .price {
-    font-size: 1.45875px;
+    font-size: 1.45875em;
     font-weight: 700;
     line-height: 1.16;
     color: var(--cardBlack);

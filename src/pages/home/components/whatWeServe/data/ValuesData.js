@@ -1,6 +1,6 @@
-import card from "../../../assets/card.png";
-import airplane from "../../../assets/airplane.png";
-import suitcase from "../../../assets/suitcase.png";
+import card from "../assets/card.png";
+import airplane from "../assets/airplane.png";
+import suitcase from "../assets/suitcase.png";
 
 
 export const values = [

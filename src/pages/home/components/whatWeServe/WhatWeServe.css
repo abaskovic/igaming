@@ -42,6 +42,7 @@
     font-weight: 600;
     line-height: 1.33;
     letter-spacing: 0.11003334075212479px;
+    color: var(--text-color);
 }
 
 
@@ -54,6 +55,7 @@
 .whatWeServe h1 {
     font-weight: 700;
     font-size: 2.465625em;
+    color: var(--text-color);
 }
 
 .whatWeServe p {
@@ -79,7 +81,8 @@
 @media (max-width: 768px) {
     .whatWeServe {
         flex-direction: column;
-        padding-inline: 16px;
+        padding-inline: 1em;
+        align-items: start;
     }
 
     .whatWeServe .heading{max-width: unset;}

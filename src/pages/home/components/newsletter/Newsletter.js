@@ -48,7 +48,8 @@ function Newsletter() {
               <img src={icon} alt="icon" />
             </button>
           </form>
-          <span className="error">{error}</span>
+          
+          <span className="error">{error}&nbsp; </span>
         </div>
       <img src={location} alt="location" className="location" />
       <img src={airplane} alt="airplane" className="airplane" />

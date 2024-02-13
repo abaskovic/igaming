@@ -1,0 +1,131 @@
+.newsletter {
+  padding-inline: min(6.25vw, 90px);
+  padding-top: min(3.153vw, 45.41px);
+  padding-bottom: min(4.794vw, 69.03px);
+  overflow: hidden;
+}
+
+.newsletterBlock {
+  background-color: var(--newsletter);
+  border-radius: 29.59px;
+  padding-block: min(5.133vw, 74.91px);
+  position: relative;
+
+}
+
+
+.newsletterContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+.newsletter .location {
+  position: absolute;
+  bottom: min(2.83vw, 40.75px);
+  right: min(2.153vw, 31px);
+}
+
+.newsletter .airplane {
+  position: absolute;
+  bottom: min(5.146vw, 74.1px);
+  left: min(0.764vw, 11px);
+}
+
+.newsletterContent h1 {
+  color: rgba(45, 49, 52, 1);
+  font-size: 2.466rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.0015em;
+  text-align: center;
+  padding-bottom: min(1.058vw, 15.23px);
+}
+
+.newsletterContent p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.6025;
+  text-align: center;
+  padding-bottom: min(2.69vw, 39.73px);
+  color: var(--paragraph-color);
+  max-width: 409.26px;
+}
+
+.newsletterForm button {
+  background-color: rgba(129, 106, 255, 1);
+  border-radius: 11.83px;
+  padding-top: 11.57px;
+  padding-bottom: 10.13px;
+  padding-right: 12.22px;
+  padding-left: 11.39px;
+  border: none;
+  box-shadow: 0px 4.930861473083496px 13.806412696838379px 0px rgba(247, 103, 67, 0.25);
+}
+
+.newsletterForm {
+  background-color: white;
+  border-radius: 11.83px;
+  padding-block: min(0.685vw, 9.86px);
+  padding-right: min(0.822vw, 11.83px);
+  padding-left: min(1.781vw, 25.64px);
+  width: min(30.818vw, 443.78px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsletterForm input {
+  border: none;
+  width: 89%;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  color: rgba(91, 95, 98, 1);
+}
+
+.newsletterForm input::placeholder {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  color: rgba(91, 95, 98, 1);
+
+}
+
+.newsletterForm input {
+  border: none;
+  width: 89%;
+}
+
+.newsletterForm input:focus {
+  border: none;
+  outline: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important
+}
+
+
+@media (max-width: 768px) {
+  .newsletterForm {
+    width: 80%;
+  }
+
+  .newsletter .location {
+    bottom: 86px;
+    right: -70px;
+  }
+
+  .newsletter .airplane {
+    bottom: 105px;
+    left: -250px;
+  }
+
+  .newsletter {
+    padding-inline: 1.5em;
+    padding-top: min(3.153vw, 45.41px);
+    padding-bottom: min(4.794vw, 69.03px);
+  }
+}

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './TopDestinations.css';
 import { destinations } from './data/Destinations';
 import SelectDestination from './components/selectDestination/SelectDestination';
-import DestinationCard from './components/tripCard/DestinationCard';
+import DestinationCard from './components/destinationCard/DestinationCard';
 
 function TopDestinations() {
     const [selectedCategory, setSelectedCategory] = useState('');

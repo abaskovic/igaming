@@ -31,7 +31,7 @@ const DestinationCard = ({ destination }) => {
                     </div>
                 </div>
 
-                <Button text="See More" href="/" />
+                <Button text="See More" href="/" ariaLabel={`See more about ${destination.city}`} />
             </div>
         </div>
     );
